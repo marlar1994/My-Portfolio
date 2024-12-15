@@ -2,12 +2,385 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My Portfolio</title>
+  <meta property="og:title" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <h1>Git Hub Testing</h1>
-  <h2>Testing VS</h2>
+  <header class="header">
+    <div class="l-inner d-flex">
+      <h1 class="logo">
+        <a href="#" >Marlar's Portfolio</a>
+      </h1>
+      <div class="hamburger sp">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="navbar js-nav">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Services</a>
+        <a href="#skill">Skill</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <!-- ./header -->
+  <section class="sec-mainvisual">
+    <div class="l-inner d-flex">
+      <div class="content-blk">
+        <div class="main-ttl">
+          <small>Hello, It's Me</small>
+          <h2>Myint Marlar Wai</h2>
+          <h3>And I'm a <span>Frontend Web Developer!</span></h3>
+          <p class="intro-txt">
+            I am a skilled frontend developer with a degree in Information Technology and over 7 years of experience in web development. My expertise lies in creating responsive, user-friendly web interfaces. I can effectively communicate and collaborate in Japanese, holding a JLPT N3 certificate, and I am currently studying for the JLPT N2 exam.
+          </p>
+          <div class="image-blk sp">
+            <div class="circle-line">
+              <img src="./images/img_profile01.jpg" alt="Myint Marlar Wai">
+            </div>
+          </div>
+          <ul class="sns-list">
+            <li><a href="#"><i class='bx bxl-facebook-square'></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+          </ul>
+          <a href="#" target="_blank" class="cmn-btn01">About Me</a>
+        </div>
+      </div>
+      <!-- ./content-blk -->
+      <div class="image-blk pc">
+        <div class="circle-line">
+          <img src="./images/img_profile01.jpg" alt="Myint Marlar Wai">
+        </div>
+      </div>
+      <!-- ./image-blk -->
+    </div>
+  </section>
+  <!-- ./sec-mainvisual -->
+  <section class="sec-about" id="about">
+    <div class="l-inner d-flex">
+      <div class="my-photo">
+        <div class="circle-line">
+          <img src="./images/img_profile02.jpg" alt="Myint Marlar Wai">
+        </div>
+      </div>
+      <div class="my-about">
+        <h2>About Me</h2>
+        <span>Frontend Web Developer!</span>
+        <p>
+          I am a frontend developer with a degree in Information Technology, graduating in 2015. I began my career at SeaDreamCo., Ltd, where I developed web projects using HTML, CSS, JavaScript, jQuery, and WordPress for 3 years. In 2018, I joined Metateam Myanmar as a SubLeader and became a Team Leader after two years. My responsibilities include managing project estimates, schedules, client communications, and team support. I also have experience as a trainer in design coding. Currently, I am expanding my skills by learning Vue.js and preparing for the JLPT N2 exam, building on my existing JLPT N3 certification.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- ./sec-about -->
+  <section class="sec-service" id="service">
+    <div class="l-inner">
+      <h2 class="cmn-ttl01">My <span>Services</span></h2>
+      <ul class="service-list">
+        <li>
+          <img src="./images/img_service01.jpg" alt="">
+          <h3>Website Coding</h3>
+          <p class="desc-txt">
+            I specialize in creating clean, responsive, and efficient static websites using the latest standards in HTML, CSS, and JavaScript. Whether it's developing from scratch or enhancing existing designs, I ensure that every project is optimized for performance and user experience across all devices. My focus is on delivering high-quality, maintainable code that brings your website to life with smooth functionality and modern design practices.
+          </p>
+        </li>
+        <li>
+          <img src="./images/img_service02.jpg" alt="">
+          <h3>Wordpress CMS</h3>
+          <p class="desc-txt">
+            I offer custom WordPress website development, focusing on creating user-friendly websites that allow clients to easily manage and update their content. By leveraging WordPress’s powerful CMS capabilities, I build sites that are not only visually appealing but also easy to maintain without technical knowledge. Whether you need a business website, blog, or e-commerce platform, I ensure that your WordPress site is fully customizable, scalable, and optimized for performance.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- ./sec-service -->
+  <section class="sec-skill js-animate active" id="skill">
+    <h2 class="cmn-ttl01">My <span>Skills</span></h2>
+    <div class="l-inner d-flex">
+      <div class="technical-bars">
+        <h3 class="cmn-ttl02">Technical Skills</h3>
+        <div class="bar"><i style="color: #e34c26;" class='bx bxl-html5'></i>
+          <div class="info">
+            <span>HTML5</span>
+          </div>
+          <div class="progress-line html">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar"><i style="color: #2965f1;" class='bx bxl-css3'></i>
+          <div class="info">
+            <span>CSS3</span>
+          </div>
+          <div class="progress-line css">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>SCSS</span>
+          </div>
+          <div class="progress-line scss">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar"><i style="color: #f0db4f;" class='bx bxl-javascript'></i>
+          <div class="info">
+            <span>Javascript</span>
+          </div>
+          <div class="progress-line javascript">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar"><i style="color: #0769AD;" class='bx bxl-jquery'></i>
+          <div class="info">
+            <span>Jquery</span>
+          </div>
+          <div class="progress-line jquery">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar"><i style="color: #0769AD;" class='bx bxl-wordpress'></i>
+          <div class="info">
+            <span>Wordpress</span>
+          </div>
+          <div class="progress-line wp">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="my-professional">
+        <h3 class="cmn-ttl02">Professional Skills</h3>
+        <div class="radial-bars">
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">100%</div>
+            <div class="text">Leadership</div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">100%</div>
+            <div class="text">Reporting</div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">85%</div>
+            <div class="text">Communication</div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">90%</div>
+            <div class="text">Problem Solving</div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">90%</div>
+            <div class="text">TeamWork</div>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </section>
+  <!-- ./sec-skill -->
+  <section class="sec-project" id="project">
+    <div class="l-inner">
+      <h2 class="cmn-ttl01">My <span>Projects</span></h2>
+      <ul class="project-list">
+        <li>
+          <a href="https://criticalbrain.co.jp/tensyoku-recipe/" target="_blank">
+            <img src="./images/my_proj01.jpg" alt="">
+            <h3>転職レシピ</h3>
+             <p class="desc-txt">Corporate website</p>
+             <p class="tech-list">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Jquery</span>
+              <span>JavaScript</span>
+              <span>Wordpress</span>
+             </p>
+          </a>
+        </li>
+        <li>
+          <a href="https://ogatajyuku.com/" target="_blank">
+            <img src="./images/my_proj02.jpg" alt="">
+            <h3>小縣塾（おがたじゅく）</h3>
+            <p class="desc-txt">Corporate website</p>
+            <p class="tech-list">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Jquery</span>
+              <span>JavaScript</span>
+              <span>Wordpress</span>
+             </p>
+          </a>
+        </li>
+        <li>
+          <a href="https://eigakudo.com/" target="_blank">
+            <img src="./images/my_proj03.jpg" alt="">
+            <h3>永学堂株式会社</h3>
+            <p class="desc-txt">Corporate website</p>
+            <p class="tech-list">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Jquery</span>
+              <span>JavaScript</span>
+              <span>Wordpress</span>
+             </p>
+          </a>
+        </li>
+        <li>
+          <a href="https://deepbranding.jp/" target="_blank">
+            <img src="./images/my_proj04.jpg" alt="">
+            <h3>Deep Branding Japan</h3>
+            <p class="desc-txt">Corporate website</p>
+            <p class="tech-list">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Jquery</span>
+              <span>JavaScript</span>
+              <span>Wordpress</span>
+             </p>
+          </a>
+        </li>
+        <li>
+          <a href="https://komiyanoboru.com/" target="_blank">
+            <img src="./images/my_proj05.jpg" alt="">
+            <h3>古宮昇 オフィシャルサイト</h3>
+            <p class="desc-txt">Corporate website</p>
+            <p class="tech-list">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Jquery</span>
+              <span>JavaScript</span>
+              <span>Wordpress</span>
+             </p>
+          </a>
+        </li>
+        <li>
+          <a href="https://koukendoboku.com/" target="_blank">
+            <img src="./images/my_proj06.jpg" alt="">
+            <h3>株式会社コウケン土木</h3>
+            <p class="desc-txt">Corporate website</p>
+            <p class="tech-list">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Jquery</span>
+              <span>JavaScript</span>
+              <span>Wordpress</span>
+             </p>
+          </a>
+        </li>
+        <li>
+          <a href="https://metateam.co.jp/" target="_blank">
+            <img src="./images/my_proj07.jpg" alt="">
+            <h3>METATEAM株式会社</h3>
+            <p class="desc-txt">Renewal Site</p>
+            <p class="tech-list">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Jquery</span>
+              <span>JavaScript</span>
+              <span>Wordpress</span>
+             </p>
+          </a>
+        </li>
+        <li>
+          <a href="https://mbp20th.net/" target="_blank">
+            <img src="./images/my_proj08.jpg" alt="">
+            <h3>20周年記念サイト</h3>
+             <p class="desc-txt">LP Page</p>
+             <p class="tech-list">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Jquery</span>
+              <span>JavaScript</span>
+             </p>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.sake-ariyama.co.jp/" target="_blank">
+            <img src="./images/my_proj09.jpg" alt="">
+            <h3>株式会社アリヤマ</h3>
+             <p class="desc-txt">Corporate website</p>
+             <p class="tech-list">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Jquery</span>
+              <span>JavaScript</span>
+             </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- ./sec-project -->
+  <section class="sec-contact" id="contact">
+    <h2 class="cmn-ttl01">Contact <span>Me</span></h2>
+    <div class="l-inner d-flex">
+      <div class="my-contact">
+        <h3>Let's Work Together</h3>
+        <p>
+          If you’re looking for a reliable and experienced frontend developer to bring your web project to life, I’d love to hear from you. Whether you need website development, redesign, or ongoing support, I’m here to help. Let’s discuss how I can contribute to your next project and make your vision a reality.
+          <br /><br />
+          Feel free to reach out via email me directly!
+        </p>
+        <ul class="contact-list">
+          <li><a href="mailto:marlar78108@gmail.com" class="d-flex"><i class='bx bxs-envelope'></i> marlar78108@gmail.com</a></li>
+          <li><a href="tel:09421030494" class="d-flex"><i class='bx bxs-phone-call'></i> 09421030494</a></li> 
+        </ul>
+        <ul class="sns-list">
+          <li><a href="#"><i class='bx bxl-facebook-square'></i></a></li>
+          <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+          <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+        </ul>
+      </div>
+      <div class="my-form">
+        
+      </div>
+    </div>
+  </section>
+  <!-- ./sec-contact -->
+  <footer>
+    <p class="copyright-txt">© All Rights Reserved.</p>
+  </footer>
+  <script src="./js/lib/jquery-3.7.1.min.js"></script>
+  <script src="./js/lib/boxicons.js"></script>
+  <script src="./js/common.js"></script>
 </body>
 </html>

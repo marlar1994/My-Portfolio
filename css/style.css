@@ -1,0 +1,961 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --robin-egg-blue: #13C7D5;
+  --oxford-blue: #050E23;
+  --caribbean-current: #076069;
+  --plum: #8A387Cff;
+  --rich-black: #081C29ff;
+  --white: #fff;
+  --black: #000;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  letter-spacing: 1px;
+  background-color: var(--rich-black);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  color: var(--white);
+}
+
+a:hover {
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    opacity: 1;
+  }
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0 auto;
+  vertical-align: bottom;
+}
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+/* PC */
+.header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 10%;
+  background: transparent;
+  background-color: var(--oxford-blue);
+}
+
+.header a {
+  color: var(--white);
+}
+
+.header .logo {
+  font-size: 2rem;
+}
+
+.header .navbar a:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.l-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sns-list {
+  display: flex;
+}
+
+.sns-list li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.sns-list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid var(--robin-egg-blue);
+  border-radius: 2rem;
+  color: var(--robin-egg-blue);
+  font-size: 2.2rem;
+  transition: all .3s ease-in-out;
+}
+
+.sns-list li a:hover {
+  border-color: var(--white);
+  background-color: var(--robin-egg-blue);
+}
+
+.sns-list li a:hover .bx {
+  color: var(--white);
+}
+
+.cmn-ttl01 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.cmn-ttl01 span {
+  color: var(--robin-egg-blue);
+}
+
+.cmn-ttl02 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--white);
+  display: inline;
+}
+
+.cmn-btn01 {
+  margin-top: 2rem;
+  padding: 4px 20px;
+  border: 2px solid var(--robin-egg-blue);
+  border-radius: 2rem;
+  color: var(--robin-egg-blue);
+  font-size: 1.6rem;
+}
+
+.cmn-btn01:hover {
+  color: var(--white);
+  background-color: var(--robin-egg-blue);
+}
+
+.sec-mainvisual {
+  padding: 14rem 0;
+}
+
+.sec-mainvisual .content-blk {
+  width: 45%;
+}
+
+.sec-mainvisual .image-blk {
+  width: 45%;
+}
+
+.sec-mainvisual .image-blk .circle-line,
+.sec-about .my-photo .circle-line {
+  display: block;
+  width: 45%;
+  width: 35rem;
+  height: 35rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 2px solid #fff;
+  border-radius: 50rem;
+}
+
+.sec-mainvisual .image-blk img,
+.sec-about .my-photo img {
+  position: relative;
+  height: 100%;
+  border-radius: 50rem;
+  box-shadow: 0 0 74px rgba(19, 119, 213, 1);
+  object-fit: cover;
+}
+
+.sec-mainvisual .main-ttl {
+  font-weight: 600;
+}
+
+.sec-mainvisual .main-ttl small {
+  font-size: 1.6rem;
+}
+
+.sec-mainvisual .main-ttl h2 {
+  font-weight: 400;
+  font-size: 3.5rem;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 2px;
+}
+
+.sec-mainvisual .main-ttl h3 {
+  font-size: 1.6rem;
+}
+
+.sec-mainvisual .main-ttl h3 span {
+  color: var(--robin-egg-blue);
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.sec-mainvisual .intro-txt {
+  margin: 2rem 0;
+  font-weight: 400;
+}
+
+.sec-about .my-photo {
+  width: 40%;
+}
+
+.sec-about .my-about {
+  width: 55%;
+}
+
+.sec-about .my-about h2 {
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+.sec-about .my-about span {
+  color: var(--robin-egg-blue);
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.sec-about .my-about p {
+  margin-top: 2rem;
+}
+
+.sec-service {
+  margin: 10rem 0;
+}
+
+.sec-service .service-list,
+.sec-project .project-list {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.sec-service .service-list li {
+  width: 45%;
+  margin: 0 2% 4%;
+  border: 2px solid var(--caribbean-current);
+  padding: 2%;
+  border-radius: 2%;
+  box-shadow: 0px 0px 20px var(--caribbean-current);
+}
+
+.sec-service .service-list li:nth-child(3n + 3),
+.sec-project .project-list li:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.sec-service .service-list li img {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+}
+
+.sec-service .service-list li h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.sec-service .service-list li .desc-txt {
+  font-size: 1.2rem;
+}
+
+.sec-skill .cmn-ttl01 {
+  margin-bottom: 3rem;
+}
+
+.sec-skill .technical-bars {
+  width: 40%;
+}
+
+.sec-skill .technical-bars .bar {
+  margin: 40px 0;
+}
+
+.sec-skill .technical-bars .bar .bx {
+  font-size: 2rem;
+}
+
+.sec-skill .technical-bars .bar:first-child {
+  margin-top: 0;
+}
+
+.sec-skill .technical-bars .bar:last-child {
+  margin-bottom: 0;
+}
+
+.sec-skill .technical-bars .bar .info {
+  margin-bottom: 5px;
+}
+
+.sec-skill .technical-bars .bar .info span {
+  font-size: 1.8rem;
+  animation: showText .5s 1s linear forwards;
+  opacity: 0;
+}
+
+.sec-skill .technical-bars .bar .progress-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: var(--black);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.sec-skill .technical-bars .bar .progress-line span {
+  height: 100%;
+  background-color: #13C7D5;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.progress-line.html span {
+  width: 100%;
+}
+
+.progress-line.css span {
+  width: 100%;
+}
+
+.progress-line.scss span {
+  width: 90%;
+}
+
+.progress-line.javascript span {
+  width: 80%;
+}
+
+.progress-line.jquery span {
+  width: 95%;
+}
+
+.progress-line.wp span {
+  width: 80%;
+}
+
+.progress-line span::after {
+  position: absolute;
+  padding: .1rem .8rem;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1.2rem;
+  border-radius: 3px;
+  top: -2.8rem;
+  right: -2rem;
+  opacity: 0;
+}
+
+.progress-line.html span::after {
+  content: "100%";
+}
+
+.progress-line.css span::after {
+  content: "100%";
+}
+
+.progress-line.scss span::after {
+  content: "90%";
+}
+
+.progress-line.javascript span::after {
+  content: "80%";
+}
+
+.progress-line.jquery span::after {
+  content: "95%";
+}
+
+.progress-line.wp span::after {
+  content: "80%";
+}
+
+.progress-line span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: .7rem solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: var(--black);
+  top: -1rem;
+  right: 0;
+  opacity: 0;
+}
+
+.js-animate.active .progress-line span::before,
+.js-animate.active .progress-line span::after,
+.js-animate.active .radial-bar .percentage,
+.js-animate.active .radial-bar .text {
+  animation: showText .5s 1s linear forwards;
+}
+
+.js-animate.active .progress-line,
+.js-animate.active .progress-line span {
+  animation: animate 1s 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+.sec-skill .my-professional {
+  width: 45%;
+}
+
+.sec-skill .radial-bars {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.radial-bar {
+  width: 48%;
+  height: 17rem;
+  margin-right: 1%;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.radial-bar:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.radial-bar svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 12rem;
+  height: 16rem;
+}
+
+.radial-bar .progress-bar {
+  stroke-width: 10;
+  stroke: var(--black);
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+  100% {
+    stroke-dashoffset: -1;
+  }
+}
+
+.path {
+  stroke-width: 10;
+  stroke: var(--robin-egg-blue);
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+.js-animate.active .path-1 {
+  animation: animate-path1 1s 1.5s linear forwards;
+}
+
+.js-animate.active .path-2 {
+  animation: animate-path2 1s 1.5s linear forwards;
+}
+
+.js-animate.active .path-3 {
+  animation: animate-path3 1s 1.5s linear forwards;
+}
+
+.js-animate.active .path-4 {
+  animation: animate-path4 1s 1.5s linear forwards;
+}
+
+.radial-bar .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  opacity: 0;
+}
+
+.radial-bar .text {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
+@keyframes animate-path1 {
+  100% {
+    stroke-dashoffset: 50;
+  }
+}
+
+@-webkit-keyframes animate-path1 {
+  100% {
+    stroke-dashoffset: 50;
+  }
+}
+
+@keyframes animate-path2 {
+  100% {
+    stroke-dashoffset: 40;
+  }
+}
+
+@-webkit-keyframes animate-path2 {
+  100% {
+    stroke-dashoffset: 40;
+  }
+}
+
+@keyframes animate-path3 {
+  100% {
+    stroke-dashoffset: 40;
+  }
+}
+
+@-webkit-keyframes animate-path3 {
+  100% {
+    stroke-dashoffset: 40;
+  }
+}
+
+@keyframes animate-path4 {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes animate-path4 {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.sec-project {
+  margin-top: 10rem;
+}
+
+.sec-project .project-list li {
+  width: 30%;
+  margin: 0 2% 4%;
+}
+
+.sec-project .project-list li img {
+  border: 2px solid var(--caribbean-current);
+  padding: 3%;
+  width: 100%;
+  border-radius: 2%;
+  box-shadow: 0px 0px 20px var(--caribbean-current);
+  transition: all .3s ease-in-out;
+}
+
+.sec-project .project-list li h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.5rem 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.sec-project .project-list li h3 .bx-chevron-right {
+  font-size: 3rem;
+  margin-top: .2rem;
+}
+
+.sec-project .project-list li a:hover img {
+  transform: scale(1.1);
+}
+
+.sec-project .project-list li .tech-list {
+  margin-top: 10px;
+}
+
+.sec-project .project-list li .tech-list span {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin: 0 5px 5px 0;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.sec-contact {
+  margin: 5rem 0;
+}
+
+.sec-contact .l-inner.d-flex {
+  justify-content: center;
+}
+
+.sec-contact .my-contact {
+  width: 60%;
+  margin-top: 3rem;
+}
+
+.sec-contact .my-contact h3 {
+  font-size: 2rem;
+}
+
+.sec-contact .my-contact p {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  color: #ccc;
+}
+
+.sec-contact .my-contact .contact-list {
+  margin-bottom: 3rem;
+}
+
+.sec-contact .my-contact .contact-list li a {
+  justify-content: flex-start;
+  pointer-events: none;
+}
+
+.sec-contact .my-contact .contact-list li .bx {
+  font-size: 2rem;
+  color: var(--robin-egg-blue);
+  margin-right: .5rem;
+}
+
+.sec-contact .my-form {
+  width: 55%;
+}
+
+footer .copyright-txt {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+/* Ipad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 0.98vw;
+  }
+
+  .l-inner {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .header {
+    padding: 20px 2%;
+  }
+
+  .sec-mainvisual .content-blk {
+    width: 50%;
+  }
+}
+
+/* SP */
+@media only screen and (max-width: 767.9px) {
+  html {
+    font-size: 2.67vw;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+  
+  .hamburger {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 12.214vw;
+    height: 5.687vw;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 0.509vw;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger span:nth-child(1) {
+    top: 0.1vw;
+    width: 9.5vw;
+  }
+
+  .hamburger span:nth-child(2) {
+    top: 2.29vw;
+    width: 9.5vw;
+  }
+
+  .hamburger span:nth-child(3) {
+    top: 4.58vw;
+    width: 9.5vw;
+  }
+
+  .hamburger.active span:nth-child(1),
+  .hamburger.active span:nth-child(2) {
+    top: 3.562vw;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .hamburger.active span:nth-child(3) {
+    opacity: 0;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .header {
+    padding: 1.5rem;
+  }
+
+  .header .logo {
+    font-size: 1.4rem;
+  }
+
+  .header .d-flex {
+    flex-direction: row;
+  }
+
+  .navbar {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 8rem;
+    background: rgb(7, 96, 105, 0.95);
+  }
+
+  .navbar a {
+    display: block;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #fff;
+  }
+
+  .header .navbar a:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .l-inner {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .sec-mainvisual {
+    width: 100%;
+    padding: 10rem 0 5rem;
+  }
+
+  .sec-mainvisual .main-ttl h2 {
+    font-size: 3rem;
+  }
+
+  .sec-mainvisual .content-blk {
+    width: 100%;
+  }
+
+  .sec-mainvisual .image-blk {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .sec-mainvisual .main-ttl h3 span {
+    font-size: 1.7rem;
+  }
+
+  .sns-list {
+    justify-content: center;
+  }
+
+  .cmn-btn01 {
+    margin: 2rem auto 0;
+    padding: 4px 20px;
+    display: block;
+    width: 40%;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .cmn-ttl01 {
+    font-size: 3rem;
+  }
+
+  .sec-mainvisual .image-blk .circle-line, 
+  .sec-about .my-photo .circle-line {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .sec-about .d-flex {
+    flex-direction: column-reverse;
+  }
+
+  .sec-about .my-about {
+    width: 100%;
+  }
+
+  .sec-about .my-photo {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .sec-service {
+    margin: 5rem 0;
+  }
+
+  .sec-service .service-list, .sec-project .project-list {
+    flex-direction: column;
+  }
+
+  .sec-service .service-list li {
+    width: 96%;
+    margin: 0 auto 4%;
+    padding: 2rem;
+  }
+
+  .sec-skill .technical-bars {
+    width: 100%;
+  }
+
+  .sec-skill .my-professional {
+    margin-top: 4rem;
+    width: 100%;
+  }
+  
+  .progress-line span::after {
+    right: 0;
+  }
+
+  .sec-project {
+    margin-top: 5rem;
+  }
+
+  .sec-project .project-list li {
+    width: 100%;
+    margin: 0 auto 3rem;
+  }
+
+  .sec-service .service-list li:nth-child(3n + 3),
+  .sec-project .project-list li:nth-child(3n + 3) {
+    margin-right: inherit;
+  }
+
+  .sec-project .project-list li a:hover img {
+    transform: scale(1);
+  }
+
+  .sec-project .project-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .sec-contact .my-contact {
+    width: 100%;
+    margin: 3rem auto 0;
+  }
+
+  .sec-contact .my-contact .contact-list li a {
+    flex-direction: row;
+  }
+
+  .sec-contact {
+    margin: 5rem 0 3rem;
+  }
+
+}
