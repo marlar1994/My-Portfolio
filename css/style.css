@@ -306,6 +306,7 @@ img {
   border-radius: 2%;
   box-shadow: 0px 0px 20px var(--caribbean-current);
   transition: all .3s ease-in-out;
+  filter: blur(1px);
 }
 
 .sec-project .project-list li h3 {
